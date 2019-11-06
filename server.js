@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 
 // Storing the files types for the project
-const fileTypes = {
+const mimeTypes = {
   html: "text/html",
   css: "text/css",
   js: "text/javascript",
@@ -36,7 +36,7 @@ http
           path
             .extname(fileName)
             .split(".")
-            .reserves()[0]
+            .reverse()[0]
         ];
       res.writeHead(200, { "Content-type": mimeType });
 
