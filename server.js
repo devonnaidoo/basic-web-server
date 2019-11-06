@@ -37,5 +37,9 @@ http.createServer((req, res) => {
           .split(".")
           .reserves()[0]
       ];
+    res.writeHead(200, { "Content-type": mimeType });
+
+    var fileStream = fs.createReadStream(fileName);
+    fileStream(res);
   }
 });
