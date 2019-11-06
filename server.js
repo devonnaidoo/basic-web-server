@@ -42,6 +42,6 @@ http.createServer((req, res) => {
     var fileStream = fs.createReadStream(fileName);
     fileStream.pipe(res);
   } else if (stats.isDirectory()) {
-    res.writeHead(302, { "Content-type": mimeType });
+    res.writeHead(302, { Location: "index.html" });
   }
 });
