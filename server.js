@@ -29,7 +29,7 @@ http.createServer((req, res) => {
     return;
   }
 
-  if (stats.isFile) {
+  if (stats.isFile()) {
     var mimeType =
       mimeTypes[
         path
@@ -40,6 +40,8 @@ http.createServer((req, res) => {
     res.writeHead(200, { "Content-type": mimeType });
 
     var fileStream = fs.createReadStream(fileName);
-    fileStream(res);
+    fileStream.pipe(res);
+  } else if (stats.isDirectory()) {
+    res.writeHead(302, { "Content-type": mimeType });
   }
 });
