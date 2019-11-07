@@ -18,7 +18,8 @@ A basic web server created using Node.js with no frameworks. It aims to give a r
 
 ## How to Use
 
-No installation required. Once on your machine, to start the server, run the follow command in the root directory:
+No installation required. Once on your machine, to start the server, run the following command in the root directory:
+
 `npm start`
 
 ### Prerequisites
