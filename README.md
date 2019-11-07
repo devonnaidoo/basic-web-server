@@ -8,3 +8,10 @@ A basic web server created using Node.js with no frameworks. It aims to give a r
 ## Screenshot
 
 ![](img/basic-server-screenshoot.jpg)
+
+## Technologies
+
+- Node
+- JavaScript
+- HTML
+- CSS
