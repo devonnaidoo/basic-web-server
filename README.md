@@ -11,7 +11,7 @@ A basic web server created using Node.js with no frameworks. It aims to give a r
 
 ### Technologies
 
-- Node
+- Node.js
 - JavaScript
 - HTML
 - CSS
