@@ -20,3 +20,7 @@ A basic web server created using Node.js with no frameworks. It aims to give a r
 
 No installation required. Once on your machine, to start the server, run the follow command in the root directory:
 `npm start`
+
+## Prerequisites
+
+- Node.js installed on your system
